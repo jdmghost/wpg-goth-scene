@@ -4,21 +4,6 @@
     margin-bottom: 4rem;
 }
 
-.post__aside {
-    margin-top: 4rem; 
-
-    @media screen and (min-width: $desktop) {
-        margin-top: -5rem;
-    }
-
-    p {
-        margin: 0;
-        padding: 0;
-    }
-
-    time {
-        display: inline-block;
-        font-weight: bold;
-        margin-bottom: 3rem;
-    }
+.post__header {
+    margin-bottom: 2rem;
 }
