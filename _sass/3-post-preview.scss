@@ -1,9 +1,9 @@
 .latest-post,
 .post-preview {
-    border: 1px solid $not-black;
-    border-radius: 2rem;
+    border-top: 1px solid $accent;
+    border-bottom: 1px solid $accent;
+    margin-top: -1px;
     padding: 1.5rem 1.8rem 1.8rem 1.8rem;
-    max-width: 29rem;
 
     a {
         display: inline-block;
@@ -17,9 +17,9 @@
 
         &:hover,
         &:focus-visible {
-            border: 2px solid $black;
-            background-color: $black;
-            color: $cream;
+            border: 2px solid $lightness;
+            background-color: $lightness;
+            color: $darkness;
             text-decoration: none;
         }
 
@@ -49,15 +49,7 @@
 }
 
 .post-preview {
-    width: calc(50% - 5rem);
-
-    @media screen and (min-width: $desktop) {
-        width: calc(33% - 5rem);
-    }
-
-    @media screen and (max-width: $mobile) {
-        width: 100%;
-    }
+    width: 100%;
 
     p {
         line-height: 1.6;
