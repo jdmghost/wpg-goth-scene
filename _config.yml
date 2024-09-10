@@ -19,6 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: WPG Goth Scene
+baseurl: "/wpg-goth-scene" # the subpath of your site, e.g. /blog
+url: "https://jdmghost.github.io/wpg-goth-scene/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: :title
 
 # Build settings
