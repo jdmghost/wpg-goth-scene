@@ -18,40 +18,11 @@
     }
 
     .header__logo {
-        &__dt {
-            display: none;
-            width: clamp(17.5rem, 23vw, 22.438rem);
-            height: auto;
-        }
-
-        &__mb {
-            width: 9rem;
-            height: auto;
-        }
-
-        @media screen and (min-width: $mobile) {
-            &__dt {
-                display: inline-block;
-            }
-
-            &__mb {
-                display: none;
-            }
-        }
-
         a {
             display: inline-block;
-
-            svg {
-                transition: all .3s ease-in-out;
-            }
-
-            &:hover,
-            &:focus {
-                svg {
-                    transform: skew(-10deg);
-                }
-            }
+            font-family: $blackletter;
+            text-decoration: none;
+            font-size: 3rem;
         }
     }
 
@@ -68,12 +39,6 @@
             font-weight: 500;
             text-underline-offset: 0.5rem;
             transition: all .3s ease-in-out;
-
-            &:hover,
-            &:focus {
-                text-underline-offset: 0.8rem;
-                font-weight: 800;
-            }
         }
 
         .header__nav__modal {

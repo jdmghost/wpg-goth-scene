@@ -44,6 +44,10 @@ body {
     }
 }
 
+button.button {
+    cursor: default;
+}
+
 .button {
     display: inline-block;
     background: transparent;

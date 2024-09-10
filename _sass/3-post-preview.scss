@@ -44,7 +44,6 @@
 
     h2 {
         display: inline-block;
-        font-family: $mono;
         margin-bottom: 1rem;
     }
 }
@@ -72,8 +71,6 @@
 
     time {
         display: inline-block;
-        font-family: $mono;
-        text-transform: uppercase;
         margin-top: 0.8rem;
         margin-bottom: 1.1rem;
     }
