@@ -1,0 +1,30 @@
+.posts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.post__aside {
+    margin-top: 4rem; 
+
+    @media screen and (min-width: $desktop) {
+        margin-top: -5rem;
+    }
+
+    time,
+    p {
+        font-family: $mono;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    time {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+}

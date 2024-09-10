@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
+        <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+        <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | relative_url }}" color="#292727">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#f4f0e9">
+        <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+        <script src="{{ '/assets/js/global.js' | relative_url }}"></script>
+
+        <title>{{ page.title }}{{ post.title }} | WPG Goth Scene</title>
+        <meta name="description" content="{{ page.meta-description }}{{ post.meta-description }}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header wo" role="banner">
+            <a href="#mainContent" class="skip-link">
+                Skip Navigation
+            </a>
+
+            <div class="header__logo col-1-5 m-col-1-4 s-col-1-3">
+                <a href="{{ '/' | relative_url }}">
+                   WPG Goth Scene
+                </a>
+            </div>
+
+            <div class="col-5-13 m-col-4-10 s-col-3-5">
+                <nav class="header__nav" role="navigation" aria-label="Site Navigation">
+                    <a class="s-hide" href="{{ '/posts' | relative_url }}">
+                        Posts
+                    </a>
+                    <button id="siteNavToggle" aria-controls="siteNav" aria-expanded="false" class="button">
+                        All Pages +
+                    </button>
+                    <div class="header__nav__modal">
+                        <ul id="siteNav" class="site-nav">
+                            <li>
+                                <a href="{{ '/posts' | relative_url }}">
+                                    Posts
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>

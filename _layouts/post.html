@@ -1,0 +1,25 @@
+{% include header.html %}
+
+<main id="mainContent" class="post pv">
+    <article class="wo">
+        <header class="post__header col-4-10 m-col-2-9">
+            <h1 class="h1">
+                {{ page.title }}
+            </h1>
+        </header>
+
+        <div class="post__aside col-1-4 m-col-2-9">
+            <time class="post__date" datetime="{{ page.date }}">
+                {{ page.date | date: "%B %e, %Y" }}
+            </time>
+        </div>
+
+        <section class="wysiwyg col-4-10 m-col-2-9">
+            {{ content }}
+        </section>
+
+    </article>
+</main>
+
+
+{% include footer.html %}

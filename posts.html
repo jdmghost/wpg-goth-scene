@@ -1,0 +1,27 @@
+---
+title: Posts
+meta-description: 
+---
+
+<main id="mainContent" class="posts wo">
+    <h1 class="h1 pv">
+        Posts
+    </h1>
+    <div class="posts__wrapper">
+        {% for post in site.posts %}
+        <article class="post-preview">
+            <h2>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <time datetime="{{ post.date }}">
+                {{ post.date | date: "%B %e, %Y" }}
+            </time>
+            <p>
+                {{ post.meta-description | truncate: 180 }}
+            </p>
+        </article>
+        {% endfor %}
+    </div>
+</main>
